@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>signup</title>
+</head>
+<body>
+<form method="post">
+    {%csrf_token%}
+    <label>username</label>
+    <input type="text" name="username">
+    <br><br>
+
+    <label>password</label>
+    <input type="password" name="password">
+    <br><br>
+
+    <label>email</label>
+    <input type="text" name="email">
+    <br><br>
+
+
+    <input type="radio" name="usertype" value="professor" id="r1">
+    <label for="r1">professor</label>
+    <br>
+
+    <input type="radio" name="usertype" value="trainee" id="r2">
+    <label for="r2">trainee</label>
+    <br>
+
+    <input type="submit">
+
+</form>
+</body>
+</html>

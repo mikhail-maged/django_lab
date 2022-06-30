@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>update subject</title>
+</head>
+<body>
+<form method="post">
+    {%csrf_token%}
+    <label>name</label>
+    <input type="text" name="name" value={{sub.name}}>
+    <br> <br>
+
+     <label>hours</label>
+    <input type="number" name="hours" value={{sub.hours}}>
+    <br> <br>
+
+    <input type="submit">
+</form>
+</body>
+</html>
